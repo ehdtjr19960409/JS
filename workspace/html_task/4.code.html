@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 자식 요소에 적용</title>
+    <style>
+
+        .container{
+            display: flex;
+
+        }
+
+        .container :first-child{
+            border: 1px solid red;
+            display: flex;
+            justify-content: end;
+            color: white;
+            background-color: darkgoldenrod
+            
+        }
+        
+        .container :last-child{
+
+            color: black;
+            background-color: pink;
+        }
+
+
+        .child {
+            flex: 1; /* 화면 너비의 반을 차지하도록 설정 */
+            padding: 20px;
+            text-align: center;
+            /* color: white; */
+            width: 100%;
+            border: 1px solid black;         
+        }
+      
+  
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child child1">Child 1</div>
+        <div class="child child2">Child 2</div>
+    </div>
+</body>
+</html>

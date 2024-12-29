@@ -41,13 +41,15 @@ userInfo("abc", `0123`, "name");
 // 0123을 8진수로 변환 => 1 x 8² + 2 x 8¹ + 3 x 8^0 = 64 + 16 + 3 = 83(10진수)
 
  
+console.log("test");
 //가변 매개변수 : 함수 호출 시 몇개의 값이 전달될지 모를 때 사용한다
 function printAdd(...numbers){
   console.log(numbers, typeof numbers);
-  // for(let i = 0; i<numbers.length; i++){
-  //     // console.log(i);
-  //     console.log(numbers[i]);
-  // }
+  for(let i = 0; i<numbers.length; i++){
+      // console.log(i);
+      console.log(numbers[i]);
+  }
+  printAdd(10,20,30);
 
   //자바 for(자료형 변수명 : 배열명){}
   // 스트림 numbers.stream().forEach(num -> num)
