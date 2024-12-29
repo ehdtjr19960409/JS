@@ -103,7 +103,7 @@ function newUser(result7, callback){
         // key value로 비교해야함
         // console.log('test',result7[2]); // 정상적으로 출력
 
-         if(20 <= Object.values(values.age[i])) // -> Object.values해서 error 발생
+         if(20 <= result7[i].age) // -> Object.values해서 error 발생
         // +)문제 TypeError: Cannot read properties of undefined (reading '0')
         
             {console.log(result7[i]);}
