@@ -100,7 +100,7 @@ function newUser(result7, callback){
     }
     for(let i=0; i<result7.length; i++){
         //20살 이상인 사용자 필터링
-        // key value로 비교해야함
+        
         // console.log('test',result7[2]); // 정상적으로 출력
 
          if(20 <= result7[i].age) // -> Object.values해서 error 발생
@@ -124,3 +124,36 @@ let result7 = newUser(result6, test);
 // ### 세 가지 작업을 수행하는 step1, step2, step3가 있습니다. 
 // 각 함수는 1초 후에 실행하고 runStep 함수에서 각 단계가 완료되면 다음단계로 넘어가고 
 // 마지막에는 모든 함수 호출 완료를 출력한다
+
+function step1(callback) {
+    setTimeout(() => {
+        console.log("Step 1 완료");
+        callback();
+    }, 1000);
+}
+
+function step2(callback) {
+    setTimeout(() => {
+        console.log("Step 2 완료");
+        callback();
+    }, 1000);
+}
+
+function step3(callback) {
+    setTimeout(() => {
+        console.log("Step 3 완료");
+        callback();
+    }, 1000);
+}
+
+function runStep() {
+    step1(() => {
+        step2(() => {
+            step3(() => {
+                console.log("모든 단계 완료");
+            });
+        });
+    });
+}
+
+runStep();
