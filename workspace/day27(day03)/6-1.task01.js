@@ -23,8 +23,9 @@ const numbers = [1,2,3,4,5];
   // console.log(newNumber);
 
 const newNumber = numbers;
+
 for (let i in newNumber){
-      newNumber[i]*2;
+      console.log(newNumber[i]*2) ;
 }
 
 // 2) 배열의 길이를 구하고 출력하기
