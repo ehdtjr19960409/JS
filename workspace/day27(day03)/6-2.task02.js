@@ -2,6 +2,22 @@
 // 나이가 10살이면 당첨을 출력하고 아니면 다음기회에 출력
 // 본인이름, 나이는 상수로 설정, 삼항연산자 사용할 것
 
+const info = [{name : `신동석`, age : 10}];
+
+const info1 = info.map(function(element){
+    return (element.age >=19 ? `입장 가능` : `입장불가`);  
+});
+
+
+const info2 = info.map(function(element){
+    return (element.age ===10 ? `당첨`:`다음기회에`);  
+});
+
+ console.log(info1, info2);
+ 
+
+
+
 //출력결과
 // 본인이름님은 00살 입장가능여부는 결과 
 // 이벤트 당첨여부
