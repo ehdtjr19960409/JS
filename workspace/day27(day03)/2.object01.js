@@ -74,11 +74,11 @@ for(let i in programming){
 // 객체를 for...of로 순회하려면 배열로 변환하면 된다
 // Object.keys(), Object.values(), Object.entries()를 사용한다
 
-
+console.log(`===========`);
 for(let key of Object.keys(programming)){
   console.log(key);
 }
-
+console.log(`===========`);
 for(let values of Object.values(programming)){
   console.log(values);
 }
