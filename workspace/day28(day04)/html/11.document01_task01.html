@@ -1,0 +1,28 @@
+<!-- 실습1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>박스1</div>
+  <div>박스2</div>
+  <div>박스3</div>
+  <div>박스4</div>
+  <div>박스5</div>
+</body>
+<script>
+// querySelectorAll을 이용해 모든 div요소를 선택하여 짝수번째 요소에 배경색을 yellow로 변경하기
+const result = document.querySelectorAll("div");
+//console.log(result); //node list 배열 번호 확인
+result.forEach ((div, index) => {
+  if(index%2===1){ //index 짝수 공식
+  //console.log(div); //index 짝수 출력 확인
+    div.style.backgroundColor = "yellow"; // div 클래스명에 스타일클래스에 백그라운드를 yellow로 변경
+    console.log(div);
+  }
+});
+</script>
+</html>

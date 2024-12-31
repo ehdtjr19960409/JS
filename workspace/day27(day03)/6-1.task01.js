@@ -35,13 +35,13 @@ const numbers = [1,2,3,4,5];
   // });
   // console.log(newNumber);
 
-<<<<<<< HEAD
+
 const newNumber = numbers;
 
 for (let i in newNumber){
       console.log(newNumber[i]*2) ;
 }
-=======
+
 
   const numbers1 = [ , , , , , ];
   for(let i in numbers){
@@ -49,7 +49,7 @@ for (let i in newNumber){
       numbers1[i] = numbers[i]*2;
   
   }console.log(numbers1);
->>>>>>> 280a223310e20afb14be326f6fa2f28149f2b0bb
+
 
 // 2) 배열의 길이를 구하고 출력하기
   console.log(numbers.length);
